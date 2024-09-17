@@ -25,3 +25,33 @@ body {
     text-wrap: balance;
   }
 }
+
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* TEXT HIGHLIGHT  */
+::selection {
+  background: #82adff;
+  color: #000;
+}
+
+/* FONT  */
+@font-face{
+  font-family: myFont;
+  src:url(./fonts/Garet-Book.otf);
+}
+*{
+  font-family: myFont;
+}
+
+@font-face{
+  font-family: myFontBold;
+  src:url(./fonts/GothamOffice-Bold.otf);
+}
+h1, .fontSpecial{
+  font-family: myFontBold;
+  font-weight: 300;
+}   
