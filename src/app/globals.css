@@ -4,12 +4,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
@@ -26,22 +26,20 @@ body {
   }
 }
 
-
-
 ::-webkit-scrollbar {
   display: none;
 }
 
 /* TEXT HIGHLIGHT  */
 ::selection {
-  background: #82adff;
-  color: #000;
+  background: #4bb4a6;
+  color: #fff;
 }
 
 /* FONT  */
 @font-face{
   font-family: myFont;
-  src:url(./fonts/Garet-Book.otf);
+  src:url(./1_MediaAssets/fonts/Garet-Book.otf);
 }
 *{
   font-family: myFont;
@@ -49,7 +47,7 @@ body {
 
 @font-face{
   font-family: myFontBold;
-  src:url(./fonts/GothamOffice-Bold.otf);
+  src:url(./1_MediaAssets/fonts/GothamOffice-Bold.otf);
 }
 h1, .fontSpecial{
   font-family: myFontBold;
