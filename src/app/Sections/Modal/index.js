@@ -10,7 +10,7 @@ export default function Modal({ setIsModalOpen }) {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState('');
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState(''); 
   const [phone, setPhone] = useState('');
   const [notes, setNotes] = useState('');
   const [consent, setConsent] = useState(false);
