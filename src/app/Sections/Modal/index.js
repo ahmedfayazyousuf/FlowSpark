@@ -10,7 +10,7 @@ export default function Modal({ setIsModalOpen }) {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState('');
   const [name, setName] = useState('');
-  const [email, setEmail] = useState(''); 
+  const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [notes, setNotes] = useState('');
   const [consent, setConsent] = useState(false);
@@ -31,8 +31,6 @@ export default function Modal({ setIsModalOpen }) {
   const timeslots = [
     '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM'
   ];
-
-  const today = new Date();
   
   function CustomDatePicker({ selectedDate, onDateChange, theme }) {
     const today = new Date();
