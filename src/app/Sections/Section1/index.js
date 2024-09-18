@@ -3,9 +3,7 @@
 import { useState } from 'react';
 
 export default function Section1() {
-  const [theme, setTheme] = useState('light');
-
-
+  const [theme] = useState('light'); 
   return (
     <div className={theme}>
       <div className="bg-white dark:bg-gray-900 transition-colors duration-300 py-0 my-0">

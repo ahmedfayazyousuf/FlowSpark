@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Header({ setIsModalOpen }) {
-    const [theme, setTheme] = useState('light');  
+    const [theme] = useState('light'); 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
