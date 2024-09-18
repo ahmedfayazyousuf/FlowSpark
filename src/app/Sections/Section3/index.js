@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function Section3() {
-  const [theme, setTheme] = useState('light');
+    const [theme] = useState('light'); 
 
   return (
     <div className={theme}>
@@ -32,7 +32,7 @@ export default function Section3() {
               Free 14-day trial. Cancel anytime.
             </p>
           </section>
-          
+
         </main>
       </div>
     </div>

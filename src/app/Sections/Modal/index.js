@@ -6,7 +6,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 
 export default function Modal({ setIsModalOpen }) {
 
-  const [theme, setTheme] = useState('light');  
+  const [theme] = useState('light'); 
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState('');
   const [name, setName] = useState('');

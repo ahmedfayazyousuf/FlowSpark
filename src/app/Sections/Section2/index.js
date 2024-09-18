@@ -4,7 +4,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { useState } from 'react';
 
 export default function Section2() {
-  const [theme, setTheme] = useState('light');
+  const [theme] = useState('light'); 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   
