@@ -51,15 +51,23 @@ export default function Modal({ setIsModalOpen }) {
         onChange={(date) => onDateChange(date)}
         inline
         highlightDates={[today]}
+        renderCustomHeader={({ date, decreaseMonth, increaseMonth }) => (
+          <div style={{ display: "flex", justifyContent: "space-between", padding: '0 10px' }}>
+            <button onClick={decreaseMonth} className="react-datepicker__navigation--previous" />
+            <span className="react-datepicker__current-month">
+              {date.toLocaleString("default", { month: "long", year: "numeric" })}
+            </span>
+            <button onClick={increaseMonth} className="react-datepicker__navigation--next" />
+          </div>
+        )}
         dayClassName={(date) =>
-          date.toDateString() === today.toDateString()
-            ? "today-highlight"
-            : undefined
+          date.toDateString() === today.toDateString() ? "today-highlight" : undefined
         }
         className={`react-datepicker-wrapper ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}
       />
     );
   }
+  
 
   const handleBookingSubmit = async () => {
 
