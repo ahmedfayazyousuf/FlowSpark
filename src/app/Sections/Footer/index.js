@@ -74,7 +74,7 @@ export default function Footer() {
                 Privacy Policy
                 </a>
             </div>
-            <p className='text-sm'>&copy; FlowSpark 2024. All rights reserved.</p>
+            <p className='text-sm'>&copy; FlowSpark Digital LLC</p>
         </div>
 
         </footer>
