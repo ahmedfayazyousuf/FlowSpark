@@ -2,6 +2,7 @@
 
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { useState } from 'react';
+import Image from 'next/image';
 
 const imageSets = {
   set1: [
@@ -63,7 +64,7 @@ export default function Section2() {
                   'Tailored experience': 'set3',
                   'All-in-one platform': 'set4',
                   'Smart insights': 'set5'
-                }).map(([title, setKey], index) => (
+                }).map(([title, setKey]) => (
                   <div
                     key={setKey}
                     onClick={() => handleSetChange(setKey)}
@@ -85,7 +86,13 @@ export default function Section2() {
             <div className="w-full md:w-1/2 flex flex-col items-center relative justify-center">
               <div className="relative w-full max-w-md">
                 <div className="overflow-hidden relative">
-                  <img src={imageSets[activeSet][currentImageIndex]} alt="Feature" className="w-full h-auto" />
+                  <Image 
+                    src={imageSets[activeSet][currentImageIndex]} 
+                    alt="Feature" 
+                    layout="responsive" 
+                    width={500} 
+                    height={300} 
+                  />
                   <button onClick={handlePrevClick} className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2 bg-white text-gray-800 dark:bg-gray-900 dark:text-white rounded-full shadow-lg">
                     <FaArrowLeft />
                   </button>
