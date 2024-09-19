@@ -3,11 +3,11 @@
 import { useState } from 'react';
 
 export default function Section3() {
-    const [theme] = useState('light'); 
+    const [theme] = useState('light');  
 
   return (
     <div className={theme}>
-      <div className="bg-transparent transition-colors duration-300 py-0 my-0">
+      <div className="bg-transparent transition-colors duration-300 py-0 my-0 mb-20">
         <main className="flex flex-col items-center py-0 px-4 md:px-12 lg:px-24">
 
           <section className="w-full flex flex-col md:flex-col gap-8 justify-center items-center text-center" style={{width: '95vw', maxWidth: '600px'}}>
