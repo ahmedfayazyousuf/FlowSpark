@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Navbar from '../app/Navbar';
+import Navbar from './Sections/Header/Navbar.js';
 import './globals.css'
 import Section1 from './Sections/Section1';
 import Section2 from './Sections/Section2';
@@ -28,7 +28,7 @@ export default function Home() {
         <main className="flex flex-col items-center py-4 px-4 md:px-12 lg:px-24">
           <Section1 />
           <Section2 />
-          <Section3 />
+          <Section3 setIsModalOpen={setIsModalOpen} />
         </main>
 
         <Footer />
@@ -36,3 +36,5 @@ export default function Home() {
     </div>
   );
 }
+
+

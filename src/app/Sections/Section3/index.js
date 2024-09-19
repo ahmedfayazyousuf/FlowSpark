@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function Section3() {
+export default function Section3({ setIsModalOpen }) {
     const [theme] = useState('light');  
 
   return (
@@ -20,7 +20,7 @@ export default function Section3() {
             </p>
 
             <div className="flex flex-col md:flex-row gap-4">
-              <button className="bg-[#4bb4a6] text-white py-3 px-6 rounded-full" onClick={() => console.log('Schedule a call')}>
+              <button className="bg-[#4bb4a6] text-white py-3 px-6 rounded-full" onClick={() => setIsModalOpen(true)}>
                 Schedule a Call
               </button>
               <button className="bg-transparent border-2 border-[#4bb4a6] text-[#4bb4a6] dark:text-white py-3 px-6 rounded-full" onClick={() => console.log('Start Free Trial')}>

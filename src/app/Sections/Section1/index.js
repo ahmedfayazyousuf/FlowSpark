@@ -1,20 +1,19 @@
 'use client';
 
 import { useState } from 'react';
-import { FaCheck, FaTimes } from 'react-icons/fa'; // Import icons for success and error
+import { FaCheck, FaTimes } from 'react-icons/fa'; 
 
 export default function Section1() {
   const [theme] = useState('light');
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [consent, setConsent] = useState(false);
-  const [status, setStatus] = useState(null); // To store form submission status
-  const [error, setError] = useState(null); // To store form errors
+  const [status, setStatus] = useState(null);
+  const [error, setError] = useState(null); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Basic client-side validation
     if (!fullName || !email || !consent) {
       setStatus(null);
       setError('Please enter all fields');
@@ -43,12 +42,10 @@ export default function Section1() {
       setStatus('success');
       setError(null);
       
-      // Clear the form fields
       setFullName('');
       setEmail('');
       setConsent(false);
 
-      // Clear status and error after 5 seconds
       setTimeout(() => {
         setStatus(null);
       }, 5000);
@@ -58,7 +55,6 @@ export default function Section1() {
       setStatus(null);
       setError(error.message === 'Server error' ? 'Server error, try again later' : 'Please enter all fields');
       
-      // Clear error after 5 seconds
       setTimeout(() => {
         setError(null);
       }, 5000);
@@ -70,7 +66,7 @@ export default function Section1() {
       <div className="bg-white dark:bg-gray-900 transition-colors duration-300 py-0 my-0">
         <main className="flex flex-col items-center py-0 px-4 md:px-12 lg:px-24">
           <section className="w-full flex flex-col md:flex-row gap-8" style={{ maxWidth: '75vw' }}>
-            {/* Left Div */}
+            
             <div className="flex flex-col w-full md:w-1/2">
               <div className="flex flex-col items-left mb-4">
                 <img src="/Images/Arrow2.png" alt="Description" className="w-5/12" style={{ margin: '0px 0px -20px -20px' }} />
@@ -84,22 +80,23 @@ export default function Section1() {
                 </div>
               </div>
             </div>
-            {/* Right Div */}
+
             <div className="flex flex-col w-full md:w-1/2 justify-center">
-              <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+              <form className="flex flex-col gap-0" onSubmit={handleSubmit}>
+                <label className="block text-black dark:text-white text-sm">Full Name</label>
                 <input
                   type="text"
-                  placeholder="Full Name"
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
-                  className="w-full p-4 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white rounded-full-lg border border-gray-300 dark:border-gray-700 shadow"
+                  className="w-full p-2 border border-gray-300 dark:border-gray-600 bg-white-100 dark:bg-gray-800 text-black dark:text-white rounded-md mb-4"
                 />
+                
+                <label className="block text-black dark:text-white text-sm">Full Name</label>
                 <input
                   type="email"
-                  placeholder="Email Address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full p-4 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white rounded-full-lg border border-gray-300 dark:border-gray-700 shadow"
+                  className="w-full p-2 border border-gray-300 dark:border-gray-600 bg-white-100 dark:bg-gray-800 text-black dark:text-white rounded-md mb-4" 
                 />
                 <div className="flex items-center gap-2">
                   <input
@@ -121,6 +118,11 @@ export default function Section1() {
                     Start My Free Trial
                   </button>
                 </div>
+                
+                <p className="text-sm text-gray-500 mt-2">
+                  Free 14-day trial. Cancel anytime.
+                </p>
+                
               </form>
               {status && (
                 <div className="flex items-center mt-4 p-2 border rounded-md text-xs" style={{ borderColor: 'green', color: 'green', backgroundColor: 'transparent' }}>

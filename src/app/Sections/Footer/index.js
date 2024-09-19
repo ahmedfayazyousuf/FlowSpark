@@ -57,7 +57,7 @@ export default function Footer() {
         <div className="w-full flex justify-center flex-col items-center gap-4">
             <Image src="/Images/BrandAssets/Logo.png" alt="FlowSpark Logo" width={150} height={100} className="object-contain" />
 
-            <div className="flex justify-center space-x-6 text-[#32baae]">
+            <div className="flex justify-center space-x-2 text-[#32baae]">
                 <FaTwitter size={24} />
                 <FaInstagram size={24} />
                 <FaLinkedin size={24} />
@@ -65,7 +65,7 @@ export default function Footer() {
                 <FaFacebook size={24} />
             </div>
 
-            <div className="flex justify-center space-x-4">
+            <div className="flex justify-center space-x-4 text-sm">
                 <a href="/terms" className="hover:underline">
                 Terms of Service
                 </a>
@@ -74,7 +74,7 @@ export default function Footer() {
                 Privacy Policy
                 </a>
             </div>
-            <p>&copy; FlowSpark 2024. All rights reserved.</p>
+            <p className='text-sm'>&copy; FlowSpark 2024. All rights reserved.</p>
         </div>
 
         </footer>

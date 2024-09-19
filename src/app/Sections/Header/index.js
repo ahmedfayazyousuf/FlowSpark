@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Image from 'next/image';
+
 
 export default function Header({ setIsModalOpen }) {
     const [theme] = useState('light'); 
@@ -13,7 +15,7 @@ export default function Header({ setIsModalOpen }) {
       <div className="bg-white dark:bg-gray-900 transition-colors duration-300">
             <header className="relative flex justify-between items-center p-6 bg-[#f3fcf9] dark:bg-gray-800 shadow-md" style={{ width: '95vw', maxWidth: '1350px', height: '100px', borderRadius: '50px', margin: '0 auto' }}>
             <div className="flex items-center">
-                <h1 className="text-2xl text-[#4bb4a6] font-bold tracking-wide">FlowSpark</h1>
+                <Image src="/Images/BrandAssets/Logo.png" alt="FlowSpark Logo" width={150} height={100} className="object-contain" />
             </div>
             <div className="hidden md:flex gap-10">
                 <a href="#features" className="text-lg text-gray-800 dark:text-white">Features</a>
