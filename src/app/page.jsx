@@ -9,6 +9,7 @@ import Section3 from './Sections/Section3';
 import Modal from './Sections/Modal';
 import Header from './Sections/Header';
 import Footer from './Sections/Footer';
+import Image from 'next/image';
 
 export default function Home() {
   const [theme, setTheme] = useState('light');
@@ -32,6 +33,15 @@ export default function Home() {
         </main>
 
         <Footer />
+
+        <div className="fixed bottom-4 right-4">
+          <Image
+            src="/Images/ChatIcon.png"
+            alt="Chat Icon"
+            width={80} 
+            height={80} 
+          />
+        </div>
       </div>
     </div>
   );
