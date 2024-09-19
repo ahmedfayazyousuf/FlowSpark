@@ -130,3 +130,26 @@ h1, .fontSpecial{
   background-color: #4bb4a6;
   transition: width 0.5s ease-in-out;
 }
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-image {
+  animation: float 2s ease-in-out infinite;
+}
+
+@media (max-width: 1000px) {
+  .floating-image {
+    display: none;
+  }
+}

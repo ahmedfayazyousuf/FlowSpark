@@ -55,7 +55,7 @@ export default function Section2() {
         <section className="mt-8 w-full bg-[#f3fcf9] dark:bg-gray-800 py-16 px-4 md:py-10 md:px-12 lg:px-24">
           <div className="flex flex-col md:flex-row gap-8">
             
-            <div className="flex flex-col w-full md:w-1/2">
+            <div className="flex flex-col w-full md:w-1/2 relative">
               <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">FlowSpark Features</h3>
               <div className="grid grid-cols-1 gap-4">
                 {Object.entries({
@@ -81,6 +81,8 @@ export default function Section2() {
               <button className="mt-4 border-2 border-[#4bb4a6] bg-transparent text-gray-800 dark:text-white py-2 px-4 rounded-full" style={{ width: '270px' }}>
                 See more features
               </button>
+              
+              <img src="/Images/Arrow4.png" alt="Description" className="w-5/12 floating-image" style={{ position: 'absolute', bottom: '0', left: '0', marginLeft: '-120px', marginBottom: '-120px' }} />
             </div>
 
             <div className="w-full md:w-1/2 flex flex-col items-center relative justify-center">

@@ -23,7 +23,7 @@ export default function Navbar({ theme, setTheme }) {
         </div>
         <button className={`bg-gray-100 dark:bg-gray-700 rounded-full px-4 py-1 text-gray-600 dark:text-gray-300 text-xs`} style={{ fontSize: '9px' }}>
           <IoChatbox className="inline mr-1" />
-          CHAT WITH SALES
+          CHAT
         </button>
         <button className={`bg-gray-100 dark:bg-gray-700 rounded-full px-4 py-1 text-gray-600 dark:text-gray-300 text-xs`} style={{ fontSize: '9px' }}>
           <FaHeadset className="inline mr-1" />

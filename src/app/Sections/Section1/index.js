@@ -91,7 +91,7 @@ export default function Section1() {
                   className="w-full p-2 border border-gray-300 dark:border-gray-600 bg-white-100 dark:bg-gray-800 text-black dark:text-white rounded-md mb-4"
                 />
                 
-                <label className="block text-black dark:text-white text-sm">Full Name</label>
+                <label className="block text-black dark:text-white text-sm">Email address</label>
                 <input
                   type="email"
                   value={email}

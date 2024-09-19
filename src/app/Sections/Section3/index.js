@@ -10,7 +10,7 @@ export default function Section3({ setIsModalOpen }) {
       <div className="bg-transparent transition-colors duration-300 py-0 my-0 mb-20">
         <main className="flex flex-col items-center py-0 px-4 md:px-12 lg:px-24">
 
-          <section className="w-full flex flex-col md:flex-col gap-8 justify-center items-center text-center" style={{width: '95vw', maxWidth: '600px'}}>
+          <section className="w-full flex flex-col md:flex-col gap-8 justify-center items-center text-center relative" style={{width: '95vw', maxWidth: '600px'}}>
             <h2 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-4">
               Want to see how we can help?
             </h2>
@@ -31,6 +31,9 @@ export default function Section3({ setIsModalOpen }) {
             <p className="text-sm text-gray-500 mt-0" style={{marginTop: '-20px'}}>
               Free 14-day trial. Cancel anytime.
             </p>
+
+            
+            <img src="/Images/Arrow3.png" alt="Description" className="w-5/12 floating-image" style={{ position: 'absolute', bottom: '0', right: '0', marginRight: '-120px', marginBottom: '-50px' }} />
           </section>
 
         </main>
